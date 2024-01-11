@@ -1,0 +1,33 @@
+docker build -t my-docker-node-app .
+
+docker run --name nnnnpp -p 48256:48256 --rm -v D:/xampp/htdocs/learn-docker:/app my-docker-node-app
+
+node_modules
+/node_modules
+./node_modules
+
+package-lock.json
+/package-lock.json
+./package-lock.json
+
+*.txt
+/*.txt
+./*.txt
+
+FROM node:latest
+
+RUN npm install nodemon -g
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+EXPOSE 48256
+
+CMD ["npm", "run", "dev"]
+
+D:\xampp\htdocs\learn-docker
+
+docker run --name nnnnpp -p 48256:48256 --rm -v D:/xampp/htdocs/learn-docker:/app my-docker-node-app
