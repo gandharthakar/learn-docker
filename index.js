@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
         {
             userid: 1,
             username: "Satish Kaushik",
-            age: 54,
+            age: 45,
             gender: "Male"
         },
         {
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
         {
             userid: 5,
             username: "Tejas Parab",
-            age: 74,
+            age: 88,
             gender: "Male"
         }
     ];
@@ -39,6 +39,6 @@ app.get('/', (req, res) => {
     res.send(respData);
 });
 
-app.listen(48256, ()=> {
+app.listen(48256, () => {
     console.log("Server is started on port number -> 48256.");
 });

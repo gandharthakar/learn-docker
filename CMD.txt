@@ -1,0 +1,6 @@
+
+docker build -t my-image .
+
+docker run --name my-container -p 48256:48256 -v D:/xampp/htdocs/learn-docker:/app my-image
+
+docker run -d --restart always --name my-container -p 48256:48256 -v D:/xampp/htdocs/learn-docker:/app my-image
